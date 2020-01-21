@@ -1,7 +1,6 @@
 import React from "react";
 import axios from "axios";
 import _ from "lodash";
-import "./index.scss";
 
 export default class Yamli extends React.Component {
 	static defaultProps = {

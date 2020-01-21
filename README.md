@@ -16,6 +16,7 @@ npm i -s react-yamli
 
 ```javascript
 import Yamli from "react-yamli";
+import "react-yamli/dist/index.css";
 
 render = () => {
 	<Yamli
@@ -28,3 +29,5 @@ render = () => {
 	/>;
 };
 ```
+
+For optimium usage you'll need to import the dist/index.css and worry about your loader webpack to handle it. 
