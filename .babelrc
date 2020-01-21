@@ -3,15 +3,10 @@
 	"plugins": [
 		"@babel/plugin-proposal-class-properties",
 		[
-			"transform-rename-import",
-			{
-				"replacements": [
-					{
-						"original": "^(.+?)\\.scss$",
-						"replacement": "$1.css"
-					}
-				]
-			}
+			"@babel/plugin-transform-runtime",
+      		{
+        		"regenerator": true
+      		}
 		]
 	]
 }
