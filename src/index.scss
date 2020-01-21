@@ -1,0 +1,37 @@
+.yamli {
+	.suggestions {
+		background: #efefef;
+		float: left;
+		max-width: 200px;
+		border-radius: 10px;
+		background: #efefef;
+		float: left;
+		max-width: 200px;
+		border-radius: 10px;
+		/* margin-top: -16px; */
+		text-align: left;
+		position: absolute;
+		max-height: 242px;
+		overflow: scroll;
+		text-align: left;
+
+		li {
+			min-height: 30px;
+			cursor: pointer;
+			width: 100%;
+			&.selected {
+				background-color: #cccccc;
+			}
+			padding: 5px 30px 10px 30px;
+		}
+	}
+
+	ul {
+		list-style: none;
+		padding: 0;
+	}
+
+	.form-group {
+		margin-bottom: 0;
+	}
+}

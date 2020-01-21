@@ -1,0 +1,36 @@
+{
+  "name": "react-yamli",
+  "version": "0.0.1",
+  "description": "Yamli React binding",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "yarn build-clear && yarn build-scss && yarn build-js",
+    "build-clear": "rm -rf dist && mkdir dist",
+    "build-js": "npx babel src/index.js -d dist",
+    "build-scss": "npx node-sass src/index.scss dist/index.css"
+  },
+  "keywords": [
+    "Yamli",
+    "Arabic",
+    "FrancoArab",
+    "Input",
+    "text"
+  ],
+  "author": "Adham Badr",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.8.3",
+    "@babel/core": "^7.8.3",
+    "@babel/plugin-proposal-class-properties": "^7.8.3",
+    "@babel/preset-env": "^7.8.3",
+    "@babel/preset-react": "^7.8.3",
+    "babel-plugin-transform-rename-import": "^2.3.0",
+    "node-sass": "^4.13.1"
+  },
+  "dependencies": {
+    "axios": "^0.19.1",
+    "lodash": "^4.17.15",
+    "react": "^16.12.0"
+  }
+}
