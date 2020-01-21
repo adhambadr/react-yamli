@@ -1,11 +1,17 @@
 {
-	"presets" : [
-	"@babel/preset-env"	,
-	"@babel/preset-react"
-	],
-	"plugins" : ["@babel/plugin-proposal-class-properties" , ["transform-rename-import" , {
-	"replacements" : [{
-	"original" : '^(.+?)\\.scss$', replacement: '$1.css'
-	}]
-	}]]
-} 	
+	"presets": ["@babel/preset-env", "@babel/preset-react"],
+	"plugins": [
+		"@babel/plugin-proposal-class-properties",
+		[
+			"transform-rename-import",
+			{
+				"replacements": [
+					{
+						"original": "^(.+?)\\.scss$",
+						"replacement": "$1.css"
+					}
+				]
+			}
+		]
+	]
+}
